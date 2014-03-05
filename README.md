@@ -13,6 +13,9 @@ Support for iOS 6.0 and superior.
 
 ####How to create
 
+    // import lib
+    #import "JJTabBarControllerLib.h"
+
 	// Create a controller 1
 	UIViewController *viewController1 = [[UIViewController alloc] initWithNibName:nil bundle:nil];
     viewController1.jjTabBarButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
@@ -29,6 +32,8 @@ Support for iOS 6.0 and superior.
     [_tabBarController didMoveToParentViewController:self];
 
 Download the project and see the example on how to do more advance features.
+For cocoapods use:
+    pod 'JJTabBarController', '~> 1.0'
 
 ####Screenshots
 ![Screenshots](Screenshots/Screenshot1.png "Screenshot1")

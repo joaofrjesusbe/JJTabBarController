@@ -1,5 +1,9 @@
-JJlibUI - simplify UI
+JJTabBarController - Create a TabBarController as it should be.
 Suggestions and Contributions email: joaofrjesusbe at gmail.com
+
+Release Notes (v1.0)
+	- Port lib to a new name “JJTabBarController”
+	- Add Cocoapods integration 
 
 Release Notes (v0.5.1):
 	- Added documentation
