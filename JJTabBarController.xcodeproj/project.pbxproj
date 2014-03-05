@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFB85E7018C7819300A6A626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E6F18C7819300A6A626 /* Foundation.framework */; };
+		CFB85E7218C7819300A6A626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E7118C7819300A6A626 /* CoreGraphics.framework */; };
+		CFB85E7418C7819300A6A626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E7318C7819300A6A626 /* UIKit.framework */; };
+		CFB85E7A18C7819300A6A626 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB85E7818C7819300A6A626 /* InfoPlist.strings */; };
+		CFB85E7C18C7819300A6A626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85E7B18C7819300A6A626 /* main.m */; };
+		CFB85E8018C7819300A6A626 /* JJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85E7F18C7819300A6A626 /* JJAppDelegate.m */; };
+		CFB85E8218C7819300A6A626 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB85E8118C7819300A6A626 /* Images.xcassets */; };
+		CFB85E8918C7819400A6A626 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E8818C7819400A6A626 /* XCTest.framework */; };
+		CFB85E8A18C7819400A6A626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E6F18C7819300A6A626 /* Foundation.framework */; };
+		CFB85E8B18C7819400A6A626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB85E7318C7819300A6A626 /* UIKit.framework */; };
+		CFB85E9318C7819400A6A626 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFB85E9118C7819400A6A626 /* InfoPlist.strings */; };
+		CFB85E9518C7819400A6A626 /* JJTabBarControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85E9418C7819400A6A626 /* JJTabBarControllerTests.m */; };
+		CFB85EB118C7828600A6A626 /* UIButton+JJButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EA118C7828600A6A626 /* UIButton+JJButton.m */; };
+		CFB85EB218C7828600A6A626 /* UIScrollView+JJCenterScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EA318C7828600A6A626 /* UIScrollView+JJCenterScroll.m */; };
+		CFB85EB318C7828600A6A626 /* JJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EA618C7828600A6A626 /* JJTabBarController.m */; };
+		CFB85EB418C7828600A6A626 /* JJTabBarSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EA818C7828600A6A626 /* JJTabBarSegue.m */; };
+		CFB85EB518C7828600A6A626 /* JJBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EAC18C7828600A6A626 /* JJBarView.m */; };
+		CFB85EB618C7828600A6A626 /* JJButtonMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EAE18C7828600A6A626 /* JJButtonMatrix.m */; };
+		CFB85EB718C7828600A6A626 /* JJTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EB018C7828600A6A626 /* JJTabBarView.m */; };
+		CFB85EE118C7829100A6A626 /* CheckBoxValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EBB18C7829100A6A626 /* CheckBoxValue.m */; };
+		CFB85EE218C7829100A6A626 /* CheckBoxValue.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EBC18C7829100A6A626 /* CheckBoxValue.xib */; };
+		CFB85EE318C7829100A6A626 /* ExampleMainTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EBE18C7829100A6A626 /* ExampleMainTabBarVC.m */; };
+		CFB85EE418C7829100A6A626 /* ExampleSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EC018C7829100A6A626 /* ExampleSettings.m */; };
+		CFB85EE518C7829100A6A626 /* blackHorizontalBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC218C7829100A6A626 /* blackHorizontalBar.png */; };
+		CFB85EE618C7829100A6A626 /* blackHorizontalBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC318C7829100A6A626 /* blackHorizontalBar@2x.png */; };
+		CFB85EE718C7829100A6A626 /* blueHorizontalBar.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC418C7829100A6A626 /* blueHorizontalBar.png */; };
+		CFB85EE818C7829100A6A626 /* blueHorizontalBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC518C7829100A6A626 /* blueHorizontalBar@2x.png */; };
+		CFB85EE918C7829100A6A626 /* blueHorizontalSeparator.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC618C7829100A6A626 /* blueHorizontalSeparator.png */; };
+		CFB85EEA18C7829100A6A626 /* blueHorizontalSeparator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC718C7829100A6A626 /* blueHorizontalSeparator@2x.png */; };
+		CFB85EEB18C7829100A6A626 /* blueVerticalSeparator.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC818C7829100A6A626 /* blueVerticalSeparator.png */; };
+		CFB85EEC18C7829100A6A626 /* blueVerticalSeparator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EC918C7829100A6A626 /* blueVerticalSeparator@2x.png */; };
+		CFB85EED18C7829100A6A626 /* checkbox-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECA18C7829100A6A626 /* checkbox-checked.png */; };
+		CFB85EEE18C7829100A6A626 /* checkbox-checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECB18C7829100A6A626 /* checkbox-checked@2x.png */; };
+		CFB85EEF18C7829100A6A626 /* checkbox-unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECC18C7829100A6A626 /* checkbox-unchecked.png */; };
+		CFB85EF018C7829100A6A626 /* checkbox-unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECD18C7829100A6A626 /* checkbox-unchecked@2x.png */; };
+		CFB85EF118C7829100A6A626 /* under-construction.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECE18C7829100A6A626 /* under-construction.jpg */; };
+		CFB85EF218C7829100A6A626 /* MoreStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ECF18C7829100A6A626 /* MoreStoryboard.storyboard */; };
+		CFB85EF318C7829100A6A626 /* ExampleActionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85ED218C7829100A6A626 /* ExampleActionsVC.m */; };
+		CFB85EF418C7829100A6A626 /* ExampleActionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ED318C7829100A6A626 /* ExampleActionsVC.xib */; };
+		CFB85EF518C7829100A6A626 /* ExampleAnimConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85ED518C7829100A6A626 /* ExampleAnimConfigVC.m */; };
+		CFB85EF618C7829100A6A626 /* ExampleAnimConfigVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ED618C7829100A6A626 /* ExampleAnimConfigVC.xib */; };
+		CFB85EF718C7829100A6A626 /* ExampleTabbarConfigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85ED818C7829100A6A626 /* ExampleTabbarConfigVC.m */; };
+		CFB85EF818C7829100A6A626 /* ExampleTabbarConfigVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85ED918C7829100A6A626 /* ExampleTabbarConfigVC.xib */; };
+		CFB85EF918C7829100A6A626 /* ExampleTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB85EDB18C7829100A6A626 /* ExampleTabBarVC.m */; };
+		CFB85EFA18C7829100A6A626 /* ExampleTabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EDC18C7829100A6A626 /* ExampleTabBarVC.xib */; };
+		CFB85EFB18C7829100A6A626 /* AltMainButtonTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EDE18C7829100A6A626 /* AltMainButtonTemplate.xib */; };
+		CFB85EFC18C7829100A6A626 /* ButtonTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EDF18C7829100A6A626 /* ButtonTemplate.xib */; };
+		CFB85EFD18C7829100A6A626 /* MainButtonTemplate.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB85EE018C7829100A6A626 /* MainButtonTemplate.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFB85E8C18C7819400A6A626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFB85E6418C7819300A6A626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFB85E6B18C7819300A6A626;
+			remoteInfo = JJTabBarController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFB85E6C18C7819300A6A626 /* JJTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB85E6F18C7819300A6A626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CFB85E7118C7819300A6A626 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CFB85E7318C7819300A6A626 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CFB85E7718C7819300A6A626 /* JJTabBarController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JJTabBarController-Info.plist"; sourceTree = "<group>"; };
+		CFB85E7918C7819300A6A626 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFB85E7B18C7819300A6A626 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CFB85E7D18C7819300A6A626 /* JJTabBarController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JJTabBarController-Prefix.pch"; sourceTree = "<group>"; };
+		CFB85E7E18C7819300A6A626 /* JJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJAppDelegate.h; sourceTree = "<group>"; };
+		CFB85E7F18C7819300A6A626 /* JJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJAppDelegate.m; sourceTree = "<group>"; };
+		CFB85E8118C7819300A6A626 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CFB85E8718C7819400A6A626 /* JJTabBarControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJTabBarControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB85E8818C7819400A6A626 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CFB85E9018C7819400A6A626 /* JJTabBarControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JJTabBarControllerTests-Info.plist"; sourceTree = "<group>"; };
+		CFB85E9218C7819400A6A626 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFB85E9418C7819400A6A626 /* JJTabBarControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJTabBarControllerTests.m; sourceTree = "<group>"; };
+		CFB85EA018C7828600A6A626 /* UIButton+JJButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+JJButton.h"; sourceTree = "<group>"; };
+		CFB85EA118C7828600A6A626 /* UIButton+JJButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JJButton.m"; sourceTree = "<group>"; };
+		CFB85EA218C7828600A6A626 /* UIScrollView+JJCenterScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JJCenterScroll.h"; sourceTree = "<group>"; };
+		CFB85EA318C7828600A6A626 /* UIScrollView+JJCenterScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JJCenterScroll.m"; sourceTree = "<group>"; };
+		CFB85EA518C7828600A6A626 /* JJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarController.h; sourceTree = "<group>"; };
+		CFB85EA618C7828600A6A626 /* JJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTabBarController.m; sourceTree = "<group>"; };
+		CFB85EA718C7828600A6A626 /* JJTabBarSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarSegue.h; sourceTree = "<group>"; };
+		CFB85EA818C7828600A6A626 /* JJTabBarSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTabBarSegue.m; sourceTree = "<group>"; };
+		CFB85EA918C7828600A6A626 /* JJTabBarControllerLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarControllerLib.h; sourceTree = "<group>"; };
+		CFB85EAB18C7828600A6A626 /* JJBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJBarView.h; sourceTree = "<group>"; };
+		CFB85EAC18C7828600A6A626 /* JJBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJBarView.m; sourceTree = "<group>"; };
+		CFB85EAD18C7828600A6A626 /* JJButtonMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJButtonMatrix.h; sourceTree = "<group>"; };
+		CFB85EAE18C7828600A6A626 /* JJButtonMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJButtonMatrix.m; sourceTree = "<group>"; };
+		CFB85EAF18C7828600A6A626 /* JJTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarView.h; sourceTree = "<group>"; };
+		CFB85EB018C7828600A6A626 /* JJTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTabBarView.m; sourceTree = "<group>"; };
+		CFB85EBA18C7829100A6A626 /* CheckBoxValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckBoxValue.h; sourceTree = "<group>"; };
+		CFB85EBB18C7829100A6A626 /* CheckBoxValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckBoxValue.m; sourceTree = "<group>"; };
+		CFB85EBC18C7829100A6A626 /* CheckBoxValue.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckBoxValue.xib; sourceTree = "<group>"; };
+		CFB85EBD18C7829100A6A626 /* ExampleMainTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleMainTabBarVC.h; sourceTree = "<group>"; };
+		CFB85EBE18C7829100A6A626 /* ExampleMainTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleMainTabBarVC.m; sourceTree = "<group>"; };
+		CFB85EBF18C7829100A6A626 /* ExampleSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleSettings.h; sourceTree = "<group>"; };
+		CFB85EC018C7829100A6A626 /* ExampleSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleSettings.m; sourceTree = "<group>"; };
+		CFB85EC218C7829100A6A626 /* blackHorizontalBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackHorizontalBar.png; sourceTree = "<group>"; };
+		CFB85EC318C7829100A6A626 /* blackHorizontalBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackHorizontalBar@2x.png"; sourceTree = "<group>"; };
+		CFB85EC418C7829100A6A626 /* blueHorizontalBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueHorizontalBar.png; sourceTree = "<group>"; };
+		CFB85EC518C7829100A6A626 /* blueHorizontalBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueHorizontalBar@2x.png"; sourceTree = "<group>"; };
+		CFB85EC618C7829100A6A626 /* blueHorizontalSeparator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueHorizontalSeparator.png; sourceTree = "<group>"; };
+		CFB85EC718C7829100A6A626 /* blueHorizontalSeparator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueHorizontalSeparator@2x.png"; sourceTree = "<group>"; };
+		CFB85EC818C7829100A6A626 /* blueVerticalSeparator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueVerticalSeparator.png; sourceTree = "<group>"; };
+		CFB85EC918C7829100A6A626 /* blueVerticalSeparator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueVerticalSeparator@2x.png"; sourceTree = "<group>"; };
+		CFB85ECA18C7829100A6A626 /* checkbox-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked.png"; sourceTree = "<group>"; };
+		CFB85ECB18C7829100A6A626 /* checkbox-checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked@2x.png"; sourceTree = "<group>"; };
+		CFB85ECC18C7829100A6A626 /* checkbox-unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-unchecked.png"; sourceTree = "<group>"; };
+		CFB85ECD18C7829100A6A626 /* checkbox-unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-unchecked@2x.png"; sourceTree = "<group>"; };
+		CFB85ECE18C7829100A6A626 /* under-construction.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "under-construction.jpg"; sourceTree = "<group>"; };
+		CFB85ECF18C7829100A6A626 /* MoreStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreStoryboard.storyboard; sourceTree = "<group>"; };
+		CFB85ED118C7829100A6A626 /* ExampleActionsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleActionsVC.h; sourceTree = "<group>"; };
+		CFB85ED218C7829100A6A626 /* ExampleActionsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleActionsVC.m; sourceTree = "<group>"; };
+		CFB85ED318C7829100A6A626 /* ExampleActionsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleActionsVC.xib; sourceTree = "<group>"; };
+		CFB85ED418C7829100A6A626 /* ExampleAnimConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleAnimConfigVC.h; sourceTree = "<group>"; };
+		CFB85ED518C7829100A6A626 /* ExampleAnimConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleAnimConfigVC.m; sourceTree = "<group>"; };
+		CFB85ED618C7829100A6A626 /* ExampleAnimConfigVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleAnimConfigVC.xib; sourceTree = "<group>"; };
+		CFB85ED718C7829100A6A626 /* ExampleTabbarConfigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTabbarConfigVC.h; sourceTree = "<group>"; };
+		CFB85ED818C7829100A6A626 /* ExampleTabbarConfigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTabbarConfigVC.m; sourceTree = "<group>"; };
+		CFB85ED918C7829100A6A626 /* ExampleTabbarConfigVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTabbarConfigVC.xib; sourceTree = "<group>"; };
+		CFB85EDA18C7829100A6A626 /* ExampleTabBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTabBarVC.h; sourceTree = "<group>"; };
+		CFB85EDB18C7829100A6A626 /* ExampleTabBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTabBarVC.m; sourceTree = "<group>"; };
+		CFB85EDC18C7829100A6A626 /* ExampleTabBarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTabBarVC.xib; sourceTree = "<group>"; };
+		CFB85EDE18C7829100A6A626 /* AltMainButtonTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltMainButtonTemplate.xib; sourceTree = "<group>"; };
+		CFB85EDF18C7829100A6A626 /* ButtonTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonTemplate.xib; sourceTree = "<group>"; };
+		CFB85EE018C7829100A6A626 /* MainButtonTemplate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainButtonTemplate.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFB85E6918C7819300A6A626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85E7218C7819300A6A626 /* CoreGraphics.framework in Frameworks */,
+				CFB85E7418C7819300A6A626 /* UIKit.framework in Frameworks */,
+				CFB85E7018C7819300A6A626 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB85E8418C7819400A6A626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85E8918C7819400A6A626 /* XCTest.framework in Frameworks */,
+				CFB85E8B18C7819400A6A626 /* UIKit.framework in Frameworks */,
+				CFB85E8A18C7819400A6A626 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFB85E6318C7819300A6A626 = {
+			isa = PBXGroup;
+			children = (
+				CFB85E7518C7819300A6A626 /* JJTabBarController */,
+				CFB85E8E18C7819400A6A626 /* JJTabBarControllerTests */,
+				CFB85E6E18C7819300A6A626 /* Frameworks */,
+				CFB85E6D18C7819300A6A626 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFB85E6D18C7819300A6A626 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E6C18C7819300A6A626 /* JJTabBarController.app */,
+				CFB85E8718C7819400A6A626 /* JJTabBarControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFB85E6E18C7819300A6A626 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E6F18C7819300A6A626 /* Foundation.framework */,
+				CFB85E7118C7819300A6A626 /* CoreGraphics.framework */,
+				CFB85E7318C7819300A6A626 /* UIKit.framework */,
+				CFB85E8818C7819400A6A626 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFB85E7518C7819300A6A626 /* JJTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E9E18C7828600A6A626 /* Source */,
+				CFB85EB818C7829100A6A626 /* Examples */,
+				CFB85E7E18C7819300A6A626 /* JJAppDelegate.h */,
+				CFB85E7F18C7819300A6A626 /* JJAppDelegate.m */,
+				CFB85E8118C7819300A6A626 /* Images.xcassets */,
+				CFB85E7618C7819300A6A626 /* Supporting Files */,
+			);
+			path = JJTabBarController;
+			sourceTree = "<group>";
+		};
+		CFB85E7618C7819300A6A626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E7718C7819300A6A626 /* JJTabBarController-Info.plist */,
+				CFB85E7818C7819300A6A626 /* InfoPlist.strings */,
+				CFB85E7B18C7819300A6A626 /* main.m */,
+				CFB85E7D18C7819300A6A626 /* JJTabBarController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB85E8E18C7819400A6A626 /* JJTabBarControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E9418C7819400A6A626 /* JJTabBarControllerTests.m */,
+				CFB85E8F18C7819400A6A626 /* Supporting Files */,
+			);
+			path = JJTabBarControllerTests;
+			sourceTree = "<group>";
+		};
+		CFB85E8F18C7819400A6A626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E9018C7819400A6A626 /* JJTabBarControllerTests-Info.plist */,
+				CFB85E9118C7819400A6A626 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFB85E9E18C7828600A6A626 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85E9F18C7828600A6A626 /* categories */,
+				CFB85EAA18C7828600A6A626 /* views */,
+				CFB85EA418C7828600A6A626 /* containers */,
+				CFB85EA918C7828600A6A626 /* JJTabBarControllerLib.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CFB85E9F18C7828600A6A626 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EA018C7828600A6A626 /* UIButton+JJButton.h */,
+				CFB85EA118C7828600A6A626 /* UIButton+JJButton.m */,
+				CFB85EA218C7828600A6A626 /* UIScrollView+JJCenterScroll.h */,
+				CFB85EA318C7828600A6A626 /* UIScrollView+JJCenterScroll.m */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		CFB85EA418C7828600A6A626 /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EA518C7828600A6A626 /* JJTabBarController.h */,
+				CFB85EA618C7828600A6A626 /* JJTabBarController.m */,
+				CFB85EA718C7828600A6A626 /* JJTabBarSegue.h */,
+				CFB85EA818C7828600A6A626 /* JJTabBarSegue.m */,
+			);
+			path = containers;
+			sourceTree = "<group>";
+		};
+		CFB85EAA18C7828600A6A626 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EAB18C7828600A6A626 /* JJBarView.h */,
+				CFB85EAC18C7828600A6A626 /* JJBarView.m */,
+				CFB85EAD18C7828600A6A626 /* JJButtonMatrix.h */,
+				CFB85EAE18C7828600A6A626 /* JJButtonMatrix.m */,
+				CFB85EAF18C7828600A6A626 /* JJTabBarView.h */,
+				CFB85EB018C7828600A6A626 /* JJTabBarView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CFB85EB818C7829100A6A626 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EB918C7829100A6A626 /* Components */,
+				CFB85EBD18C7829100A6A626 /* ExampleMainTabBarVC.h */,
+				CFB85EBE18C7829100A6A626 /* ExampleMainTabBarVC.m */,
+				CFB85EBF18C7829100A6A626 /* ExampleSettings.h */,
+				CFB85EC018C7829100A6A626 /* ExampleSettings.m */,
+				CFB85EC118C7829100A6A626 /* Images */,
+				CFB85ECF18C7829100A6A626 /* MoreStoryboard.storyboard */,
+				CFB85ED018C7829100A6A626 /* SubTabsVC */,
+				CFB85EDD18C7829100A6A626 /* Xibs */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		CFB85EB918C7829100A6A626 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EBA18C7829100A6A626 /* CheckBoxValue.h */,
+				CFB85EBB18C7829100A6A626 /* CheckBoxValue.m */,
+				CFB85EBC18C7829100A6A626 /* CheckBoxValue.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CFB85EC118C7829100A6A626 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EC218C7829100A6A626 /* blackHorizontalBar.png */,
+				CFB85EC318C7829100A6A626 /* blackHorizontalBar@2x.png */,
+				CFB85EC418C7829100A6A626 /* blueHorizontalBar.png */,
+				CFB85EC518C7829100A6A626 /* blueHorizontalBar@2x.png */,
+				CFB85EC618C7829100A6A626 /* blueHorizontalSeparator.png */,
+				CFB85EC718C7829100A6A626 /* blueHorizontalSeparator@2x.png */,
+				CFB85EC818C7829100A6A626 /* blueVerticalSeparator.png */,
+				CFB85EC918C7829100A6A626 /* blueVerticalSeparator@2x.png */,
+				CFB85ECA18C7829100A6A626 /* checkbox-checked.png */,
+				CFB85ECB18C7829100A6A626 /* checkbox-checked@2x.png */,
+				CFB85ECC18C7829100A6A626 /* checkbox-unchecked.png */,
+				CFB85ECD18C7829100A6A626 /* checkbox-unchecked@2x.png */,
+				CFB85ECE18C7829100A6A626 /* under-construction.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		CFB85ED018C7829100A6A626 /* SubTabsVC */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85ED118C7829100A6A626 /* ExampleActionsVC.h */,
+				CFB85ED218C7829100A6A626 /* ExampleActionsVC.m */,
+				CFB85ED318C7829100A6A626 /* ExampleActionsVC.xib */,
+				CFB85ED418C7829100A6A626 /* ExampleAnimConfigVC.h */,
+				CFB85ED518C7829100A6A626 /* ExampleAnimConfigVC.m */,
+				CFB85ED618C7829100A6A626 /* ExampleAnimConfigVC.xib */,
+				CFB85ED718C7829100A6A626 /* ExampleTabbarConfigVC.h */,
+				CFB85ED818C7829100A6A626 /* ExampleTabbarConfigVC.m */,
+				CFB85ED918C7829100A6A626 /* ExampleTabbarConfigVC.xib */,
+				CFB85EDA18C7829100A6A626 /* ExampleTabBarVC.h */,
+				CFB85EDB18C7829100A6A626 /* ExampleTabBarVC.m */,
+				CFB85EDC18C7829100A6A626 /* ExampleTabBarVC.xib */,
+			);
+			path = SubTabsVC;
+			sourceTree = "<group>";
+		};
+		CFB85EDD18C7829100A6A626 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CFB85EDE18C7829100A6A626 /* AltMainButtonTemplate.xib */,
+				CFB85EDF18C7829100A6A626 /* ButtonTemplate.xib */,
+				CFB85EE018C7829100A6A626 /* MainButtonTemplate.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFB85E6B18C7819300A6A626 /* JJTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB85E9818C7819400A6A626 /* Build configuration list for PBXNativeTarget "JJTabBarController" */;
+			buildPhases = (
+				CFB85E6818C7819300A6A626 /* Sources */,
+				CFB85E6918C7819300A6A626 /* Frameworks */,
+				CFB85E6A18C7819300A6A626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JJTabBarController;
+			productName = JJTabBarController;
+			productReference = CFB85E6C18C7819300A6A626 /* JJTabBarController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFB85E8618C7819400A6A626 /* JJTabBarControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB85E9B18C7819400A6A626 /* Build configuration list for PBXNativeTarget "JJTabBarControllerTests" */;
+			buildPhases = (
+				CFB85E8318C7819400A6A626 /* Sources */,
+				CFB85E8418C7819400A6A626 /* Frameworks */,
+				CFB85E8518C7819400A6A626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB85E8D18C7819400A6A626 /* PBXTargetDependency */,
+			);
+			name = JJTabBarControllerTests;
+			productName = JJTabBarControllerTests;
+			productReference = CFB85E8718C7819400A6A626 /* JJTabBarControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFB85E6418C7819300A6A626 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JJ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "João Jesus";
+				TargetAttributes = {
+					CFB85E8618C7819400A6A626 = {
+						TestTargetID = CFB85E6B18C7819300A6A626;
+					};
+				};
+			};
+			buildConfigurationList = CFB85E6718C7819300A6A626 /* Build configuration list for PBXProject "JJTabBarController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CFB85E6318C7819300A6A626;
+			productRefGroup = CFB85E6D18C7819300A6A626 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFB85E6B18C7819300A6A626 /* JJTabBarController */,
+				CFB85E8618C7819400A6A626 /* JJTabBarControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB85E6A18C7819300A6A626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85EEA18C7829100A6A626 /* blueHorizontalSeparator@2x.png in Resources */,
+				CFB85E7A18C7819300A6A626 /* InfoPlist.strings in Resources */,
+				CFB85EED18C7829100A6A626 /* checkbox-checked.png in Resources */,
+				CFB85EE918C7829100A6A626 /* blueHorizontalSeparator.png in Resources */,
+				CFB85EF018C7829100A6A626 /* checkbox-unchecked@2x.png in Resources */,
+				CFB85EE618C7829100A6A626 /* blackHorizontalBar@2x.png in Resources */,
+				CFB85EEE18C7829100A6A626 /* checkbox-checked@2x.png in Resources */,
+				CFB85EE818C7829100A6A626 /* blueHorizontalBar@2x.png in Resources */,
+				CFB85EFC18C7829100A6A626 /* ButtonTemplate.xib in Resources */,
+				CFB85EE518C7829100A6A626 /* blackHorizontalBar.png in Resources */,
+				CFB85EF418C7829100A6A626 /* ExampleActionsVC.xib in Resources */,
+				CFB85EF618C7829100A6A626 /* ExampleAnimConfigVC.xib in Resources */,
+				CFB85EFD18C7829100A6A626 /* MainButtonTemplate.xib in Resources */,
+				CFB85EFA18C7829100A6A626 /* ExampleTabBarVC.xib in Resources */,
+				CFB85EF218C7829100A6A626 /* MoreStoryboard.storyboard in Resources */,
+				CFB85EE218C7829100A6A626 /* CheckBoxValue.xib in Resources */,
+				CFB85EFB18C7829100A6A626 /* AltMainButtonTemplate.xib in Resources */,
+				CFB85EEF18C7829100A6A626 /* checkbox-unchecked.png in Resources */,
+				CFB85EF118C7829100A6A626 /* under-construction.jpg in Resources */,
+				CFB85EEC18C7829100A6A626 /* blueVerticalSeparator@2x.png in Resources */,
+				CFB85EEB18C7829100A6A626 /* blueVerticalSeparator.png in Resources */,
+				CFB85EF818C7829100A6A626 /* ExampleTabbarConfigVC.xib in Resources */,
+				CFB85E8218C7819300A6A626 /* Images.xcassets in Resources */,
+				CFB85EE718C7829100A6A626 /* blueHorizontalBar.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB85E8518C7819400A6A626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85E9318C7819400A6A626 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFB85E6818C7819300A6A626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85EB518C7828600A6A626 /* JJBarView.m in Sources */,
+				CFB85EB718C7828600A6A626 /* JJTabBarView.m in Sources */,
+				CFB85EB218C7828600A6A626 /* UIScrollView+JJCenterScroll.m in Sources */,
+				CFB85EB118C7828600A6A626 /* UIButton+JJButton.m in Sources */,
+				CFB85E8018C7819300A6A626 /* JJAppDelegate.m in Sources */,
+				CFB85EE418C7829100A6A626 /* ExampleSettings.m in Sources */,
+				CFB85EB318C7828600A6A626 /* JJTabBarController.m in Sources */,
+				CFB85EF718C7829100A6A626 /* ExampleTabbarConfigVC.m in Sources */,
+				CFB85EB618C7828600A6A626 /* JJButtonMatrix.m in Sources */,
+				CFB85EF518C7829100A6A626 /* ExampleAnimConfigVC.m in Sources */,
+				CFB85EE318C7829100A6A626 /* ExampleMainTabBarVC.m in Sources */,
+				CFB85EB418C7828600A6A626 /* JJTabBarSegue.m in Sources */,
+				CFB85EE118C7829100A6A626 /* CheckBoxValue.m in Sources */,
+				CFB85EF918C7829100A6A626 /* ExampleTabBarVC.m in Sources */,
+				CFB85EF318C7829100A6A626 /* ExampleActionsVC.m in Sources */,
+				CFB85E7C18C7819300A6A626 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB85E8318C7819400A6A626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB85E9518C7819400A6A626 /* JJTabBarControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFB85E8D18C7819400A6A626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFB85E6B18C7819300A6A626 /* JJTabBarController */;
+			targetProxy = CFB85E8C18C7819400A6A626 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFB85E7818C7819300A6A626 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB85E7918C7819300A6A626 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CFB85E9118C7819400A6A626 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFB85E9218C7819400A6A626 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFB85E9618C7819400A6A626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CFB85E9718C7819400A6A626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFB85E9918C7819400A6A626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJTabBarController/JJTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "JJTabBarController/JJTabBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CFB85E9A18C7819400A6A626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJTabBarController/JJTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "JJTabBarController/JJTabBarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CFB85E9C18C7819400A6A626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JJTabBarController.app/JJTabBarController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJTabBarController/JJTabBarController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JJTabBarControllerTests/JJTabBarControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CFB85E9D18C7819400A6A626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JJTabBarController.app/JJTabBarController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JJTabBarController/JJTabBarController-Prefix.pch";
+				INFOPLIST_FILE = "JJTabBarControllerTests/JJTabBarControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFB85E6718C7819300A6A626 /* Build configuration list for PBXProject "JJTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB85E9618C7819400A6A626 /* Debug */,
+				CFB85E9718C7819400A6A626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB85E9818C7819400A6A626 /* Build configuration list for PBXNativeTarget "JJTabBarController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB85E9918C7819400A6A626 /* Debug */,
+				CFB85E9A18C7819400A6A626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB85E9B18C7819400A6A626 /* Build configuration list for PBXNativeTarget "JJTabBarControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFB85E9C18C7819400A6A626 /* Debug */,
+				CFB85E9D18C7819400A6A626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFB85E6418C7819300A6A626 /* Project object */;
+}
