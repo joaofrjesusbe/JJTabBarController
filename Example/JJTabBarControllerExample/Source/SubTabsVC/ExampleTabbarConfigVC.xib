@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExampleTabbarConfigVC">
+            <connections>
+                <outlet property="containerCheckBoxValue1" destination="HX0-IF-lm5" id="hAQ-VW-utH"/>
+                <outlet property="containerCheckBoxValue2" destination="ncr-o6-Pr0" id="gsF-Bq-1BM"/>
+                <outlet property="containerCheckBoxValue3" destination="V3a-DM-ZBX" id="gD7-Dm-8NA"/>
+                <outlet property="containerCheckBoxValue4" destination="Sed-Mw-slD" id="1mJ-lq-jak"/>
+                <outlet property="containerCheckBoxValue5" destination="glq-sQ-anu" id="nhx-yo-izJ"/>
+                <outlet property="containerCheckBoxValue6" destination="chM-hv-U7a" id="gbY-KR-Jbi"/>
+                <outlet property="scrollContentView" destination="Lcr-7g-vTG" id="Eu3-Nn-pQh"/>
+                <outlet property="scrollView" destination="7ts-xh-j17" id="X1n-Ht-BVw"/>
+                <outlet property="segOrientation" destination="Klk-l2-n9y" id="GFK-0j-9QQ"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7ts-xh-j17">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="Lcr-7g-vTG">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="448"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="gXn-Sr-4Wq">
+                                    <rect key="frame" x="10" y="10" width="300" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabBar Orientation:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YCl-F9-2eF">
+                                            <rect key="frame" x="10" y="10" width="280" height="13"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" id="Klk-l2-n9y">
+                                            <rect key="frame" x="10" y="30" width="280" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Top"/>
+                                                <segment title="Left"/>
+                                                <segment title="Bot"/>
+                                                <segment title="Right"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="changeOrientation:" destination="-1" eventType="valueChanged" id="NZ5-tV-ySH"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="Idb-NZ-q2X">
+                                    <rect key="frame" x="10" y="88" width="300" height="339"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabBar Scroll Policy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lDO-Pe-euf">
+                                            <rect key="frame" x="10" y="11" width="280" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" id="HX0-IF-lm5">
+                                            <rect key="frame" x="0.0" y="35" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" id="ncr-o6-Pr0">
+                                            <rect key="frame" x="0.0" y="80" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" id="V3a-DM-ZBX">
+                                            <rect key="frame" x="0.0" y="125" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" id="Sed-Mw-slD">
+                                            <rect key="frame" x="0.0" y="170" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TabBar Selection Policy:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M3H-70-nhY">
+                                            <rect key="frame" x="20" y="231" width="280" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" id="glq-sQ-anu">
+                                            <rect key="frame" x="0.0" y="250" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" id="chM-hv-U7a">
+                                            <rect key="frame" x="0.0" y="295" width="300" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                </scrollView>
+                <navigationBar contentMode="scaleToFill" translucent="NO" id="SaI-92-EAh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Tabbar Config" id="9sa-PJ-Gyq"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

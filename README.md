@@ -5,6 +5,8 @@ Create a TabBarController as it should be.
 
 Support for iOS 6.0 and superior.
 
+Current version: 1.0
+
 ####Functionality :
  - Personalize your TabBar.
  - Built-in transitions.
