@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "João Jesus" => "joaofrjesusbe@gmail.com" }
   s.platform     = :ios, '6.0'
-  s.source       = {:git => 'https://github.com/joaofrjesusbe/JJTabBarController.git', :tag => "v#{s.version}"}
+  s.source       = {:git => 'https://github.com/joaofrjesusbe/JJTabBarController.git', :tag => "#{s.version}"}
   s.source_files  = 'JJTabBarController/**'
   s.requires_arc  = true
 end
