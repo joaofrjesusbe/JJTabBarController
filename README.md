@@ -54,6 +54,6 @@ For cocoapods use:
 
 ####More:
 
-Suggestions and Contributions email: joaofrjesusbe at gmail.com
+Suggestions and Contributions email: joaofrjesusbe@gmail.com
 
 License: MIT License
