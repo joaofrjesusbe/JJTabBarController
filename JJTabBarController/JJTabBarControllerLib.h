@@ -9,7 +9,7 @@
 /**
  *  @brief JJTabBarController - Create a TabBarController as it should be.
  *
- *  @version 1.0
+ *  @version 1.0.0
  *  @author João Jesus
  *
  *  Support for iOS 6.0 and superior.

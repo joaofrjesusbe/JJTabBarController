@@ -1,6 +1,6 @@
 # JJTabBarController CHANGELOG
 
-## 1.0
+## 1.0.0
 	* Port lib to a new name “JJTabBarController”
 	* Add Cocoapods integration 
 
@@ -8,18 +8,18 @@
 	* Added documentation
 	* Small fixes
 
-## 0.5
+## 0.5.0
 	* Storyboard integration
 	* Add option to add several blocks to buttons for events
 	* Small fixes
 	* Improved examples	 
 
-## 0.4
+## 0.4.0
 	* Change examples
 	* Fix animations
 	* Small fixes
 
-## 0.3
+## 0.3.0
 	* Add hide/show tabbar from JTabBarController
 	* Add animations to hide tabbar and change child view controllers. 
 

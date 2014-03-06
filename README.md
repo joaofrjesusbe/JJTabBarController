@@ -5,7 +5,7 @@ Create a TabBarController as it should be.
 
 Support for iOS 6.0 and superior.
 
-Current version: 1.0
+Current version: 1.0.0
 
 ####Functionality :
  - Personalize your TabBar.
@@ -38,7 +38,7 @@ Download the project and see the example on how to do more advance features.
 
 For cocoapods use:
 
-	pod 'JJTabBarController', '~> 1.0'
+	pod 'JJTabBarController', '~> 1.0.0'
 
 ####Screenshots
 ![Screenshots](Screenshots/Screenshot1.png "Screenshot1")
