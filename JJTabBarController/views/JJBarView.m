@@ -53,7 +53,7 @@
 }
 
 - (void)setupJJBarView {
-    _alignment = JJBarViewAlignmentHorizontal;
+    _alignment = JJBarViewAlignmentHorizontalCenter;
     self.subViewsContainer = self;
     self.autoResizeChilds = YES;
     self.separatorImageViews = nil;
@@ -236,12 +236,16 @@
     if ( scrollEnabled  && self.scrollBoxFixSize != ValueNotDefine ) {
         
         switch (self.alignment) {
-            case JJBarViewAlignmentHorizontal:
+            case JJBarViewAlignmentHorizontalLeft:
+            case JJBarViewAlignmentHorizontalCenter:
+            case JJBarViewAlignmentHorizontalRight:
                 frame.size.width = self.scrollBoxFixSize;
                 frame.size.height = bounds.size.height;
                 break;
-                
-            case JJBarViewAlignmentVertical:
+            
+            case JJBarViewAlignmentVerticalTop:
+            case JJBarViewAlignmentVerticalCenter:
+            case JJBarViewAlignmentVerticalBottom:
                 frame.size.width = bounds.size.width;
                 frame.size.height = self.scrollBoxFixSize;
                 break;
@@ -267,13 +271,17 @@
         }
         
         switch (_alignment) {
-            case JJBarViewAlignmentHorizontal:
+            case JJBarViewAlignmentHorizontalLeft:
+            case JJBarViewAlignmentHorizontalCenter:
+            case JJBarViewAlignmentHorizontalRight:
                 totalSpace = ( _imageSeparator ? bounds.size.width - separatorSize.width * separatorCount : bounds.size.width );
                 frame.size.width = totalSpace / boxCount;
                 frame.size.height = bounds.size.height;
                 break;
                 
-            case JJBarViewAlignmentVertical:
+            case JJBarViewAlignmentVerticalTop:
+            case JJBarViewAlignmentVerticalCenter:
+            case JJBarViewAlignmentVerticalBottom:
                 totalSpace = ( _imageSeparator ? bounds.size.height - separatorSize.height * separatorCount : bounds.size.height );
                 frame.size.width = bounds.size.width;
                 frame.size.height = totalSpace / boxCount;
@@ -320,7 +328,9 @@
         
         switch (self.alignment) {
                 
-            case JJBarViewAlignmentHorizontal:
+            case JJBarViewAlignmentHorizontalLeft:
+            case JJBarViewAlignmentHorizontalCenter:
+            case JJBarViewAlignmentHorizontalRight:
             {
                 CGFloat childViewShift = 0;
                 CGFloat imageSeparatorShift = 0;
@@ -356,7 +366,9 @@
                 
             } break;
                 
-            case JJBarViewAlignmentVertical:
+            case JJBarViewAlignmentVerticalTop:
+            case JJBarViewAlignmentVerticalCenter:
+            case JJBarViewAlignmentVerticalBottom:
             {
                 CGFloat childViewShift = 0;
                 CGFloat imageSeparatorShift = 0;
@@ -435,7 +447,7 @@
         
         CGSize size;
         
-        if ( _alignment == JJBarViewAlignmentHorizontal ) {
+        if ( _alignment == JJBarViewAlignmentHorizontalCenter ) {
             
             size = CGSizeMake( CGRectGetMaxX(lastChild.frame) + self.childEdges.right, CGRectGetMaxY(bounds));
             
@@ -447,7 +459,7 @@
                 size = CGSizeMake( CGRectGetMaxX(lastChild.frame) + self.childEdges.right, CGRectGetMaxY(bounds));
             }
             
-        } else if ( _alignment == JJBarViewAlignmentVertical ) {
+        } else if ( _alignment == JJBarViewAlignmentVerticalCenter ) {
             
             size = CGSizeMake( CGRectGetMaxX(bounds), CGRectGetMaxY(lastChild.frame) + self.childEdges.bottom );
             

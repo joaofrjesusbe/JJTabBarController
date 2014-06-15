@@ -279,9 +279,9 @@
 			isa = PBXGroup;
 			children = (
 				CFFAB7A918C8A5A6004E7910 /* categories */,
+				CFFAB7B418C8A5A6004E7910 /* views */,
 				CFFAB7AE18C8A5A6004E7910 /* containers */,
 				CFFAB7B318C8A5A6004E7910 /* JJTabBarControllerLib.h */,
-				CFFAB7B418C8A5A6004E7910 /* views */,
 			);
 			name = JJTabBarController;
 			path = ../JJTabBarController;

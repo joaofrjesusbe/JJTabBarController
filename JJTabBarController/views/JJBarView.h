@@ -15,15 +15,24 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
     /**
      *  Defines the alignment as horizontal
      */
-    JJBarViewAlignmentHorizontal,
+    JJBarViewAlignmentHorizontalLeft,
+    JJBarViewAlignmentHorizontalCenter,
+    JJBarViewAlignmentHorizontalRight,
     /**
      *  Defines the alignment as vertical
      */
-    JJBarViewAlignmentVertical,
+    JJBarViewAlignmentVerticalTop,
+    JJBarViewAlignmentVerticalCenter,
+    JJBarViewAlignmentVerticalBottom,
     /**
      *  No alignment, freeform.
      */
-    JJBarViewAlignmentNone
+    JJBarViewAlignmentNone,
+    /**
+     *  @Deprecated
+     */
+    JJBarViewAlignmentHorizontal = JJBarViewAlignmentHorizontalCenter,
+    JJBarViewAlignmentVertical = JJBarViewAlignmentVerticalCenter
 };
 
 /**

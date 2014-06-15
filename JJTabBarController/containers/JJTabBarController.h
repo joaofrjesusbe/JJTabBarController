@@ -199,7 +199,7 @@ static const NSString *JJTabBarSegueIndex = @"JJIndex";
 /**
  *  Button to be used as a tabbar button if this view controller is inside a tabbar controller.
  */
-@property (nonatomic, strong) IBOutlet UIButton *jjTabBarButton;
+@property (nonatomic, strong) UIButton *jjTabBarButton;
 
 /**
  *  If the view controller has a tabbar controller as its ancestor, return it. Returns nil otherwise.
