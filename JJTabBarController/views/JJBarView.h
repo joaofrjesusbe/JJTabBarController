@@ -18,12 +18,15 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
     JJBarViewAlignmentHorizontalLeft,
     JJBarViewAlignmentHorizontalCenter,
     JJBarViewAlignmentHorizontalRight,
+    JJBarViewAlignmentHorizontalJustify, // change original size
+    
     /**
      *  Defines the alignment as vertical
      */
     JJBarViewAlignmentVerticalTop,
     JJBarViewAlignmentVerticalCenter,
     JJBarViewAlignmentVerticalBottom,
+    JJBarViewAlignmentVerticalJustify, // change original size
     /**
      *  No alignment, freeform.
      */
@@ -46,6 +49,9 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
     
     UIScrollView *_scrollContainer;
 }
+
++ (BOOL)isAlignmentHorizontal:(JJBarViewAlignment)alignment;
++ (BOOL)isAlignmentVertical:(JJBarViewAlignment)alignment;
 
 /**
  *  Delegate of the bar to adjust better the position and size of the child views.
@@ -84,10 +90,16 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
 @property(nonatomic,assign) UIEdgeInsets childEdges;
 
 /**
+ *  Add's edge inset to the bar view.
+ *  Default: {0, 0, 0, 0}
+ */
+@property(nonatomic,assign) UIEdgeInsets barEdges;
+
+/**
  *  If YES will resize it's subviews accordling to it's policy. If NO, just the position is going to be changed, overriding the scroll policy.
  *  Default: YES
  */
-@property(nonatomic,assign) BOOL autoResizeChilds;
+@property(nonatomic,assign) BOOL autoResizeChilds __deprecated;
 
 
 #pragma mark - bar view scroll enable

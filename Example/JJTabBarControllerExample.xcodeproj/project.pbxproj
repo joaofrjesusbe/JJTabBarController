@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075058FF194FABB500C19EA8 /* Example1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 075058FE194FABB500C19EA8 /* Example1VC.m */; };
 		CFFAB73218C8A524004E7910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73118C8A524004E7910 /* Foundation.framework */; };
 		CFFAB73418C8A524004E7910 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73318C8A524004E7910 /* CoreGraphics.framework */; };
 		CFFAB73618C8A524004E7910 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73518C8A524004E7910 /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075058FD194FABB500C19EA8 /* Example1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example1VC.h; sourceTree = "<group>"; };
+		075058FE194FABB500C19EA8 /* Example1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Example1VC.m; sourceTree = "<group>"; };
 		CFFAB72E18C8A524004E7910 /* JJTabBarControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTabBarControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFAB73118C8A524004E7910 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFFAB73318C8A524004E7910 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075058FC194FAB9400C19EA8 /* FromStoryboardVC */ = {
+			isa = PBXGroup;
+			children = (
+				075058FD194FABB500C19EA8 /* Example1VC.h */,
+				075058FE194FABB500C19EA8 /* Example1VC.m */,
+			);
+			path = FromStoryboardVC;
+			sourceTree = "<group>";
+		};
 		CFFAB72518C8A524004E7910 = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +248,7 @@
 		CFFAB77518C8A570004E7910 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				075058FC194FAB9400C19EA8 /* FromStoryboardVC */,
 				CFFAB77E18C8A570004E7910 /* SubTabsVC */,
 				CFFAB77618C8A570004E7910 /* Components */,
 				CFFAB77A18C8A570004E7910 /* ExampleMainTabBarVC.h */,
@@ -411,6 +424,7 @@
 				CFFAB73E18C8A524004E7910 /* main.m in Sources */,
 				CFFAB7BB18C8A5A6004E7910 /* UIButton+JJButton.m in Sources */,
 				CFFAB7A418C8A570004E7910 /* ExampleTabbarConfigVC.m in Sources */,
+				075058FF194FABB500C19EA8 /* Example1VC.m in Sources */,
 				CFFAB7BD18C8A5A6004E7910 /* JJTabBarController.m in Sources */,
 				CFFAB7C118C8A5A6004E7910 /* JJTabBarView.m in Sources */,
 				CFFAB7BE18C8A5A6004E7910 /* JJTabBarSegue.m in Sources */,

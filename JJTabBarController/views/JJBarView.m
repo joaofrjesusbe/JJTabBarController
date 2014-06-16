@@ -53,9 +53,8 @@
 }
 
 - (void)setupJJBarView {
-    _alignment = JJBarViewAlignmentHorizontalCenter;
+    _alignment = JJBarViewAlignmentHorizontalJustify;
     self.subViewsContainer = self;
-    self.autoResizeChilds = YES;
     self.separatorImageViews = nil;
     _childViews = @[];
 }
