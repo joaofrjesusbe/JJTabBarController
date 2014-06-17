@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fCI-wd-Pvb">
-                                <rect key="frame" x="100" y="77" width="120" height="120"/>
+                                <rect key="frame" x="100" y="123" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="120"/>
                                 <nil key="highlightedColor"/>
@@ -118,6 +118,7 @@
                                     <segment title="Left"/>
                                     <segment title="Center"/>
                                     <segment title="Right"/>
+                                    <segment title="Justify"/>
                                 </segments>
                                 <connections>
                                     <action selector="alignmentChange:" destination="BKu-Le-SK4" eventType="valueChanged" id="MRx-UA-iZU"/>

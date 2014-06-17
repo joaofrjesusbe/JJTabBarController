@@ -32,7 +32,7 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
      */
     JJBarViewAlignmentNone,
     /**
-     *  @Deprecated
+     *  @deprecated use the aligments above
      */
     JJBarViewAlignmentHorizontal = JJBarViewAlignmentHorizontalCenter,
     JJBarViewAlignmentVertical = JJBarViewAlignmentVerticalCenter
@@ -50,7 +50,14 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
     UIScrollView *_scrollContainer;
 }
 
+/**
+ *  Check if the alignment is horizontal.
+ */
 + (BOOL)isAlignmentHorizontal:(JJBarViewAlignment)alignment;
+
+/**
+ *  Check if the alignment is vertical.
+ */
 + (BOOL)isAlignmentVertical:(JJBarViewAlignment)alignment;
 
 /**
@@ -96,6 +103,7 @@ typedef NS_ENUM(short, JJBarViewAlignment) {
 @property(nonatomic,assign) UIEdgeInsets barEdges;
 
 /**
+ *  @deprecated use alignment property instead
  *  If YES will resize it's subviews accordling to it's policy. If NO, just the position is going to be changed, overriding the scroll policy.
  *  Default: YES
  */

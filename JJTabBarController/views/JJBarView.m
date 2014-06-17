@@ -27,6 +27,22 @@
 
 @synthesize scrollContainer = _scrollContainer;
 
+#pragma mark - Static 
+
++ (BOOL)isAlignmentHorizontal:(JJBarViewAlignment)alignment {
+    return (alignment == JJBarViewAlignmentHorizontalLeft ||
+            alignment == JJBarViewAlignmentHorizontalCenter ||
+            alignment == JJBarViewAlignmentHorizontalRight ||
+            alignment == JJBarViewAlignmentHorizontalJustify);
+}
+
++ (BOOL)isAlignmentVertical:(JJBarViewAlignment)alignment {
+    return (alignment == JJBarViewAlignmentVerticalTop ||
+            alignment == JJBarViewAlignmentVerticalCenter ||
+            alignment == JJBarViewAlignmentVerticalBottom ||
+            alignment == JJBarViewAlignmentVerticalJustify);
+}
+
 #pragma mark - Initialization
 
 - (id)init {
@@ -58,7 +74,6 @@
     self.separatorImageViews = nil;
     _childViews = @[];
 }
-
 
 #pragma mark - public properties
 
@@ -95,6 +110,11 @@
     [self setNeedsLayout];
 }
 
+- (void)setBarEdges:(UIEdgeInsets)barEdges {
+    _barEdges = barEdges;
+    [self setNeedsLayout];
+}
+
 - (void)setImageSeparator:(UIImage *)imageSeparator {
     if ( imageSeparator == nil || _imageSeparator != imageSeparator ) {
         for (UIImageView *separatorView in self.separatorImageViews) {
@@ -110,6 +130,11 @@
 
 - (void)setAutoResizeChilds:(BOOL)autoResizeChilds {
     _autoResizeChilds = autoResizeChilds;
+    if ( [JJBarView isAlignmentHorizontal:self.alignment] ) {
+        self.alignment = JJBarViewAlignmentHorizontalJustify;
+    } else if ( [JJBarView isAlignmentVertical:self.alignment] ) {
+        self.alignment = JJBarViewAlignmentVerticalJustify;
+    }
     [self setNeedsLayout];
 }
 
@@ -446,7 +471,7 @@
         
         CGSize size;
         
-        if ( _alignment == JJBarViewAlignmentHorizontalCenter ) {
+        if ( [JJBarView isAlignmentHorizontal:self.alignment] ) {
             
             size = CGSizeMake( CGRectGetMaxX(lastChild.frame) + self.childEdges.right, CGRectGetMaxY(bounds));
             
@@ -458,7 +483,7 @@
                 size = CGSizeMake( CGRectGetMaxX(lastChild.frame) + self.childEdges.right, CGRectGetMaxY(bounds));
             }
             
-        } else if ( _alignment == JJBarViewAlignmentVerticalCenter ) {
+        } else if ( [JJBarView isAlignmentVertical:self.alignment] ) {
             
             size = CGSizeMake( CGRectGetMaxX(bounds), CGRectGetMaxY(lastChild.frame) + self.childEdges.bottom );
             
