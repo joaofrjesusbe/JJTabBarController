@@ -10,6 +10,13 @@
 #import <objc/runtime.h>
 #import "JJTabBarSegue.h"
 
+BOOL isSlideAnimation(JJTabBarAnimation animation) {
+    return  (animation == JJTabBarAnimationSlideUp ||
+             animation == JJTabBarAnimationSlideDown ||
+             animation == JJTabBarAnimationSlideFromLeft ||
+             animation == JJTabBarAnimationSlideFromRight);
+}
+
 @interface JJTabBarController () <JJButtonMatrixDelegate>
 
 @property(nonatomic,assign) CGSize tabBarSize;
@@ -249,7 +256,7 @@
             self.tabBar.frame = frame;
             self.tabBar.alpha = (hiddenTabBar ? 1.0f : 0.0f);
 
-        }else if ( animation == JJTabBarAnimationSlide ) {
+        }else if ( isSlideAnimation(animation)) {
             frame = [self frameForTabBarWithTabbarHidden:!_hiddenTabBar];
             self.tabBar.frame = frame;
             self.tabBar.alpha = 1.0f;
@@ -259,7 +266,7 @@
         
         [UIView animateWithDuration:0.3f delay:0.0f options:options animations:^{
             
-            if ( animation == JJTabBarAnimationSlide ) {
+            if ( isSlideAnimation(animation) ) {
                 CGRect frame = [self frameForTabBarWithTabbarHidden:_hiddenTabBar];
                 self.tabBar.frame = frame;
             } else if ( animation == JJTabBarAnimationCrossDissolve ) {
@@ -524,7 +531,8 @@
         if ( animation == JJTabBarAnimationCrossDissolve ) {
             options |= UIViewAnimationOptionTransitionCrossDissolve;
             
-        } else if ( animation == JJTabBarAnimationSlide ) {
+        }
+        else if ( animation == JJTabBarAnimationSlideDown ) {
             
             CGRect initialFrame = self.viewContainer.bounds;
             switch (self.tabBarDock) {
@@ -549,13 +557,88 @@
             }
             viewController.view.frame = initialFrame;
         }
+        else if ( animation == JJTabBarAnimationSlideUp ) {
+            
+            CGRect initialFrame = self.viewContainer.bounds;
+            switch (self.tabBarDock) {
+                case JJTabBarDockTop:
+                    initialFrame.origin.y += initialFrame.size.height;
+                    break;
+                    
+                case JJTabBarDockBottom:
+                    initialFrame.origin.y -= initialFrame.size.height;
+                    break;
+                    
+                case JJTabBarDockLeft:
+                    initialFrame.origin.x += initialFrame.size.width;
+                    break;
+                    
+                case JJTabBarDockRight:
+                    initialFrame.origin.x -= initialFrame.size.width;
+                    break;
+                    
+                default:
+                    break;
+            }
+            viewController.view.frame = initialFrame;
+        }
+        else if ( animation == JJTabBarAnimationSlideFromRight ) {
+            
+            CGRect initialFrame = self.viewContainer.bounds;
+            switch (self.tabBarDock) {
+                case JJTabBarDockTop:
+                    initialFrame.origin.x -= initialFrame.size.width;
+                    break;
+                    
+                case JJTabBarDockBottom:
+                    initialFrame.origin.x += initialFrame.size.width;
+                    break;
+                    
+                case JJTabBarDockLeft:
+                    initialFrame.origin.y -= initialFrame.size.height;
+                    break;
+                    
+                case JJTabBarDockRight:
+                    initialFrame.origin.y += initialFrame.size.height;
+                    break;
+                    
+                default:
+                    break;
+            }
+            viewController.view.frame = initialFrame;
+        }
+        else if ( animation == JJTabBarAnimationSlideFromRight ) {
+            
+            CGRect initialFrame = self.viewContainer.bounds;
+            switch (self.tabBarDock) {
+                case JJTabBarDockTop:
+                    initialFrame.origin.x += initialFrame.size.width;
+                    break;
+                    
+                case JJTabBarDockBottom:
+                    initialFrame.origin.x -= initialFrame.size.width;
+                    break;
+                    
+                case JJTabBarDockLeft:
+                    initialFrame.origin.y += initialFrame.size.height;
+                    break;
+                    
+                case JJTabBarDockRight:
+                    initialFrame.origin.y -= initialFrame.size.height;
+                    break;
+                    
+                default:
+                    break;
+            }
+            viewController.view.frame = initialFrame;
+        }
         
         [self transitionFromViewController:_selectedTabBarChild
                           toViewController:viewController
                                   duration:0.3
                                    options:options
                                 animations:^{
-                                    if ( animation == JJTabBarAnimationSlide ) {
+                                    if ( isSlideAnimation(animation) ) {
                                         CGRect finalFrame = self.viewContainer.bounds;
                                         viewController.view.frame = finalFrame;
                                     }

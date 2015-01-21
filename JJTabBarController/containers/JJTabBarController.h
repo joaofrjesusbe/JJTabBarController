@@ -27,7 +27,10 @@ typedef NS_ENUM(short, JJTabBarDock) {
 typedef NS_ENUM(short, JJTabBarAnimation) {
     JJTabBarAnimationNone,
     JJTabBarAnimationCrossDissolve,
-    JJTabBarAnimationSlide,
+    JJTabBarAnimationSlideFromLeft,
+    JJTabBarAnimationSlideFromRight,
+    JJTabBarAnimationSlideUp,
+    JJTabBarAnimationSlideDown,
 };
 
 #define JJTabBarDockIsHorizontal(x) ( (x) == JJTabBarDockBottom || (x) == JJTabBarDockTop )
