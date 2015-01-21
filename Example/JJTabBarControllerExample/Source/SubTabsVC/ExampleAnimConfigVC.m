@@ -37,7 +37,7 @@
         case JJTabBarAnimationCrossDissolve:
             return 1;
 
-        case JJTabBarAnimationSlide:
+        case JJTabBarAnimationSlideUp:
             return 2;
 
         default:
@@ -51,7 +51,7 @@
             return JJTabBarAnimationCrossDissolve;
             
         case 2:
-            return JJTabBarAnimationSlide;
+            return JJTabBarAnimationSlideUp;
             
         default:
             return JJTabBarAnimationNone;
