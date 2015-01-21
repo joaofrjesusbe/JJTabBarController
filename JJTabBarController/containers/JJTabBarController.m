@@ -86,6 +86,7 @@
 
 - (void)setTabBar:(JJTabBarView *)associatedTabBar {
     _tabBar = associatedTabBar;
+    _tabBarSize = _tabBar.bounds.size;
     
     if ( ![self isViewLoaded] ) {
         return;
@@ -165,7 +166,6 @@
 - (void)viewWillLayoutSubviews {
     _tabBar.frame = [self frameForTabBarWithTabbarHidden:_tabBar.hidden];
     _tabBar.alignment = [self alignmentForTabBar];
-    _viewContainer.frame = [self frameForContainerWithTabbarHidden:(_tabBar ? _tabBar.hidden : NO)];
     self.selectedTabBarChild.view.frame = _viewContainer.bounds;
 }
 
