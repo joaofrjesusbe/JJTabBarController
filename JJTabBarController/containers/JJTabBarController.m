@@ -565,6 +565,7 @@ BOOL isSlideAnimation(JJTabBarAnimation animation) {
         }
         else if ( animation == JJTabBarAnimationSlideUp ) {
             
+            CGRect initialFrame = self.viewContainer.bounds;
             switch (self.tabBarDock) {
                 case JJTabBarDockTop:
                     initialFrame.origin.y += initialFrame.size.height;
@@ -601,7 +602,7 @@ BOOL isSlideAnimation(JJTabBarAnimation animation) {
                     break;
                     
                 case JJTabBarDockBottom:
-                    initialFrame.origin.x -= initialFrame.size.width;
+                    initialFrame.origin.x += initialFrame.size.width;
                     finalFrameForSelectView.origin.x += finalFrameForSelectView.size.width;
                     break;
                     
@@ -630,7 +631,7 @@ BOOL isSlideAnimation(JJTabBarAnimation animation) {
                     break;
                     
                 case JJTabBarDockBottom:
-                    initialFrame.origin.x += initialFrame.size.width;
+                    initialFrame.origin.x -= initialFrame.size.width;
                     finalFrameForSelectView.origin.x -= finalFrameForSelectView.size.width;
                     break;
                     
