@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18D47EEFEC8E3A2C7BD16317 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51261FAB08F07339BDCF6BAA /* CoreVideo.framework */; };
+		392370952099CE68BC05DDF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706BFE3CC45C624775A08377 /* QuartzCore.framework */; };
+		6EADE28CC1BAEF161EA5A47F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E7E297711BCC3B25BA9B05 /* CoreTelephony.framework */; };
+		738BB7E32A8B42F71C60DAC7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F556537F6C8EC55E3220B320 /* SystemConfiguration.framework */; };
+		7F9810C066CF20BC94CBAB66 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0CCDDD6F4F811A398D6B2FF /* AVFoundation.framework */; };
+		9392B01E47A062759020E9AA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC082E515F9AEA443E89C164 /* CoreMedia.framework */; };
+		954A3C354DC3CB171C1D435A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7750BF5B7227695BFE3C9DB1 /* AssetsLibrary.framework */; };
+		A9F748A31820F724681320C1 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 029CDEEA7FCD40796E3B486B /* CoreText.framework */; };
 		CFFAB73218C8A524004E7910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73118C8A524004E7910 /* Foundation.framework */; };
 		CFFAB73418C8A524004E7910 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73318C8A524004E7910 /* CoreGraphics.framework */; };
 		CFFAB73618C8A524004E7910 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFFAB73518C8A524004E7910 /* UIKit.framework */; };
@@ -50,9 +58,16 @@
 		CFFAB7BF18C8A5A6004E7910 /* JJBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFAB7B618C8A5A6004E7910 /* JJBarView.m */; };
 		CFFAB7C018C8A5A6004E7910 /* JJButtonMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFAB7B818C8A5A6004E7910 /* JJButtonMatrix.m */; };
 		CFFAB7C118C8A5A6004E7910 /* JJTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFFAB7BA18C8A5A6004E7910 /* JJTabBarView.m */; };
+		D1403C24A5A7CFA2B29AD89B /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC3824549EE5443DACB134BF /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		029CDEEA7FCD40796E3B486B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		51261FAB08F07339BDCF6BAA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		62E7E297711BCC3B25BA9B05 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		706BFE3CC45C624775A08377 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7750BF5B7227695BFE3C9DB1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		AC082E515F9AEA443E89C164 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		CFFAB72E18C8A524004E7910 /* JJTabBarControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJTabBarControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFAB73118C8A524004E7910 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CFFAB73318C8A524004E7910 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +131,9 @@
 		CFFAB7B818C8A5A6004E7910 /* JJButtonMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJButtonMatrix.m; sourceTree = "<group>"; };
 		CFFAB7B918C8A5A6004E7910 /* JJTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTabBarView.h; sourceTree = "<group>"; };
 		CFFAB7BA18C8A5A6004E7910 /* JJTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTabBarView.m; sourceTree = "<group>"; };
+		E0CCDDD6F4F811A398D6B2FF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EC3824549EE5443DACB134BF /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		F556537F6C8EC55E3220B320 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +144,15 @@
 				CFFAB73418C8A524004E7910 /* CoreGraphics.framework in Frameworks */,
 				CFFAB73618C8A524004E7910 /* UIKit.framework in Frameworks */,
 				CFFAB73218C8A524004E7910 /* Foundation.framework in Frameworks */,
+				D1403C24A5A7CFA2B29AD89B /* BuddyBuildSDK.framework in Frameworks */,
+				954A3C354DC3CB171C1D435A /* AssetsLibrary.framework in Frameworks */,
+				A9F748A31820F724681320C1 /* CoreText.framework in Frameworks */,
+				6EADE28CC1BAEF161EA5A47F /* CoreTelephony.framework in Frameworks */,
+				738BB7E32A8B42F71C60DAC7 /* SystemConfiguration.framework in Frameworks */,
+				392370952099CE68BC05DDF7 /* QuartzCore.framework in Frameworks */,
+				7F9810C066CF20BC94CBAB66 /* AVFoundation.framework in Frameworks */,
+				9392B01E47A062759020E9AA /* CoreMedia.framework in Frameworks */,
+				18D47EEFEC8E3A2C7BD16317 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +184,15 @@
 				CFFAB73318C8A524004E7910 /* CoreGraphics.framework */,
 				CFFAB73518C8A524004E7910 /* UIKit.framework */,
 				CFFAB74A18C8A524004E7910 /* XCTest.framework */,
+				EC3824549EE5443DACB134BF /* BuddyBuildSDK.framework */,
+				7750BF5B7227695BFE3C9DB1 /* AssetsLibrary.framework */,
+				029CDEEA7FCD40796E3B486B /* CoreText.framework */,
+				62E7E297711BCC3B25BA9B05 /* CoreTelephony.framework */,
+				F556537F6C8EC55E3220B320 /* SystemConfiguration.framework */,
+				706BFE3CC45C624775A08377 /* QuartzCore.framework */,
+				E0CCDDD6F4F811A398D6B2FF /* AVFoundation.framework */,
+				AC082E515F9AEA443E89C164 /* CoreMedia.framework */,
+				51261FAB08F07339BDCF6BAA /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -518,6 +554,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JJTabBarControllerExample/JJTabBarControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "JJTabBarControllerExample/JJTabBarControllerExample-Info.plist";
@@ -532,6 +572,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JJTabBarControllerExample/JJTabBarControllerExample-Prefix.pch";
 				INFOPLIST_FILE = "JJTabBarControllerExample/JJTabBarControllerExample-Info.plist";

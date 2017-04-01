@@ -8,11 +8,14 @@
 
 #import "ExampleAppDelegate.h"
 #import "ExampleMainTabBarVC.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation ExampleAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [BuddyBuildSDK setup];
+    
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[ExampleMainTabBarVC alloc] initWithNibName:nil bundle:nil];
