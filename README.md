@@ -1,6 +1,8 @@
 JJTabBarController
 ==================
 
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=58dfb4dbe93a6400013fa76d&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/58dfb4dbe93a6400013fa76d/build/latest?branch=master)
+
 Create a TabBarController as it should be.
 
 Support for iOS 6.0 and superior.
